@@ -1,0 +1,860 @@
+/* Telas peq*/
+@media (max-width: 768px) {
+
+	/* Estilos Gerais */
+	body {
+		margin: 1% auto;
+	}
+
+	/* Estilo do Cabeçalho */
+	nav {
+		padding: 1%;
+		text-align: center;
+	}
+
+	nav .logo {
+		border-radius: 10px;
+		padding: 1%;
+
+	}
+
+	nav .logo a {
+		font-family: 'Georgia', 'Times New Roman', Times, serif;
+		text-decoration: none;
+	}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		border-radius: 10px;
+		padding: 1%;
+	}
+
+	nav ul li {
+		width: 40%;
+		margin: 0 20px;
+		border-radius: 10px;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+	}
+
+	nav ul li a.disabled {
+		pointer-events: none;
+	}
+
+	/* Estilos para os Botões do cabeçalho */
+	.btn-preço {
+		width: 84%;
+		font-size: 6.0vw;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 3%;
+		padding: 3%;
+		cursor: pointer;
+		border-radius: 8px;
+	}
+
+	.btn-preço:hover {
+		transform: scale(1.05);
+		/* Leve aumento no tamanho ao passar o mouse */
+	}
+
+	/* Estilo da Imagem foto */
+	.container-foto {
+		width: 100%;
+		height: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Estilo da imagem */
+	img {
+		width: 60%;
+		margin: 1% auto;
+	}
+
+	/* Container geral que organiza os elementos verticalmente */
+	.container-descrição {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Estilo da descrição */
+	.descrição-beneficente {
+		width: 100%;
+	}
+
+	/* Estilos para Containers */
+	.container-verde {
+		border-radius: 10px;
+		width: 96%;
+		margin: 1% auto;
+		padding: 5px;
+		overflow-x: auto;
+	}
+
+	.container2-cronometro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+		border-radius: 15px;
+	}
+
+	.container-cronometro {
+		margin-bottom: 20px;
+	}
+
+	#cronometro {
+		font-size: 7.0vw;
+		padding: 20px 40px;
+		border-radius: 10px;
+		transition: all 0.5s;
+	}
+
+	#cronometro.finalizado {
+		transform: scale(1.2);
+		animation: pulsar 1s infinite alternate;
+	}
+
+	@keyframes pulsar {
+		from {
+			transform: scale(1.2);
+		}
+
+		to {
+			transform: scale(1.3);
+		}
+	}
+
+	#mensagem-sorteio {
+		font-size: 4.0vw;
+		animation: fadeInOut 1.5s infinite;
+	}
+
+	@keyframes fadeInOut {
+
+		0%,
+		100% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	/* Ajustes para containers de números */
+	.resultado-sorteio {
+		font-size: 3.0vw;
+		width: 100%;
+	}
+
+	.resultado-sorteio h2 {
+		margin-bottom: 10px;
+	}
+
+	.resultado-sorteio p {
+		margin: 1% auto;
+
+	}
+
+	/* Estilização para botões */
+	.number-btn {
+		width: 12vw;
+		height: 12vw;
+		border: none;
+		border-radius: 50%;
+		font-size: 5vw;
+		cursor: pointer;
+		margin: 1% auto;
+	}
+
+	.number-btn:disabled {
+		cursor: not-allowed;
+	}
+
+	/* Estilização para o resumo */
+	.summary {
+		margin-top: 2vw;
+		padding: 3vw;
+		border-radius: 1vw;
+	}
+
+	.summary p {
+		margin: 1.5vw 0;
+		font-size: 2.5vw;
+		/* Tamanho da fonte responsivo */
+	}
+
+	/* Estilização para a lista de participantes */
+	#lista-participantes {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		font-size: 3.0vw;
+		border-radius: 10px;
+	}
+
+	/* Estilos para Títulos */
+	h1 {
+		font-size: 8.0vw;
+		text-align: center;
+
+	}
+
+	h2 {
+		font-size: 7.0vw;
+		text-align: center;
+
+	}
+
+	h3 {
+		font-size: 6.0vw;
+		text-align: center;
+
+	}
+
+	h4,
+	h5 {
+		font-size: 5.0vw;
+		text-align: center;
+		margin: 0.5em 0;
+	}
+
+
+	/* Estilos para Parágrafos */
+	.p1,
+	.p2,
+	.p3 {
+		text-align: justify;
+		margin: 0 1%;
+		text-indent: 10%;
+		font-size: 4.8vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.p4 {
+		text-align: right;
+		margin: 0 1%;
+		font-size: 4.8vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.btn1,
+	.btn2,
+	.btn3 {
+		width: 80%;
+		border: none;
+		padding: 1% 10%;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 10px;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 5.0vw;
+	}
+
+	.btn1:hover,
+	.btn2:hover {
+		transform: scale(1.1);
+	}
+
+	.btn3:hover {
+		transform: scale(1.1);
+	}
+
+	/* Estilo do Rodapé */
+	footer {
+		text-align: center;
+		margin: 1%;
+		padding: 1%;
+		border-radius: 8px;
+		font-size: 4.1vw;
+	}
+}
+
+/* Telas médias */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+	/* Estilos Gerais */
+	body {
+		margin: 1% auto;
+	}
+
+	/* Estilo do Cabeçalho */
+	nav {
+		padding: 1%;
+		text-align: center;
+	}
+
+	nav .logo {
+		border-radius: 10px;
+		padding: 1%;
+
+	}
+
+	nav .logo a {
+		font-family: 'Georgia', 'Times New Roman', Times, serif;
+		text-decoration: none;
+	}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		border-radius: 10px;
+		padding: 1%;
+	}
+
+	nav ul li {
+		width: 40%;
+		margin: 0 20px;
+		border-radius: 10px;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+	}
+
+	nav ul li a.disabled {
+		pointer-events: none;
+	}
+
+	/* Estilos para os Botões do cabeçalho */
+	.btn-preço {
+		width: 84%;
+		font-size: 6.0vw;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 3%;
+		padding: 3%;
+		cursor: pointer;
+		border-radius: 8px;
+	}
+
+	.btn-preço:hover {
+		transform: scale(1.05);
+		/* Leve aumento no tamanho ao passar o mouse */
+	}
+
+	/* Estilo da Imagem foto */
+	.container-foto {
+		width: 100%;
+		height: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Estilo da imagem */
+	img {
+		width: 60%;
+		margin: 1% auto;
+	}
+
+	/* Container geral que organiza os elementos verticalmente */
+	.container-descrição {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Estilo da descrição */
+	.descrição-beneficente {
+		width: 100%;
+	}
+
+	/* Estilos para Containers */
+	.container-verde {
+		border-radius: 10px;
+		width: 96%;
+		margin: 1% auto;
+		padding: 5px;
+		overflow-x: auto;
+	}
+
+	.container2-cronometro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+		border-radius: 15px;
+	}
+
+	.container-cronometro {
+		margin-bottom: 20px;
+	}
+
+	#cronometro {
+		font-size: 7.0vw;
+		padding: 20px 40px;
+		border-radius: 10px;
+		transition: all 0.5s;
+	}
+
+	#cronometro.finalizado {
+		transform: scale(1.2);
+		animation: pulsar 1s infinite alternate;
+	}
+
+	@keyframes pulsar {
+		from {
+			transform: scale(1.2);
+		}
+
+		to {
+			transform: scale(1.3);
+		}
+	}
+
+	#mensagem-sorteio {
+		font-size: 4.0vw;
+		animation: fadeInOut 1.5s infinite;
+	}
+
+	@keyframes fadeInOut {
+
+		0%,
+		100% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	/* Ajustes para containers de números */
+	.resultado-sorteio {
+		font-size: 3.0vw;
+		width: 100%;
+	}
+
+	.resultado-sorteio h2 {
+		margin-bottom: 10px;
+	}
+
+	.resultado-sorteio p {
+		margin: 1% auto;
+
+	}
+
+	/* Estilização para botões */
+	.number-btn {
+		width: 12vw;
+		height: 12vw;
+		border: none;
+		border-radius: 50%;
+		font-size: 5vw;
+		cursor: pointer;
+		margin: 1% auto;
+	}
+
+	.number-btn:disabled {
+		cursor: not-allowed;
+	}
+
+	/* Estilização para o resumo */
+	.summary {
+		margin-top: 2vw;
+		padding: 3vw;
+		border-radius: 1vw;
+	}
+
+	.summary p {
+		margin: 1.5vw 0;
+		font-size: 2.5vw;
+		/* Tamanho da fonte responsivo */
+	}
+
+	/* Estilização para a lista de participantes */
+	#lista-participantes {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		font-size: 3.0vw;
+		border-radius: 10px;
+	}
+
+	/* Estilos para Títulos */
+	h1 {
+		font-size: 10.0vw;
+		text-align: center;
+
+	}
+
+	h2 {
+		font-size: 6.0vw;
+		text-align: center;
+
+	}
+
+	h3 {
+		font-size: 5.0vw;
+		text-align: center;
+
+	}
+
+	h4,
+	h5 {
+		font-size: 4.0vw;
+		text-align: center;
+		margin: 0.5em 0;
+	}
+
+
+	
+	/* Estilos para Parágrafos */
+	.p1,
+	.p2,
+	.p3 {
+		text-align: justify;
+		margin: 0 1%;
+		text-indent: 10%;
+		font-size: 5.0vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.p4 {
+		text-align: right;
+		margin: 0 1%;
+		font-size: 5.0vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.btn1,
+	.btn2,
+	.btn3 {
+		width: 80%;
+		border: none;
+		padding: 1% 10%;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 10px;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 5.0vw;
+	}
+
+	.btn1:hover,
+	.btn2:hover {
+		transform: scale(1.1);
+	}
+
+	.btn3:hover {
+		transform: scale(1.1);
+	}
+
+	/* Estilo do Rodapé */
+	footer {
+		text-align: center;
+		margin: 1%;
+		padding: 1%;
+		border-radius: 8px;
+		font-size: 4.1vw;
+	}
+}
+
+
+/* Telas grandes */
+@media only screen and (min-width: 1201px) {
+
+	/* Estilos Gerais */
+	body {
+		padding: 8%;
+	}
+
+	/* Estilo do Cabeçalho */
+	nav {
+		padding: 1%;
+		text-align: center;
+	}
+
+	nav .logo {
+		border-radius: 10px;
+		padding: 1%;
+
+	}
+
+	nav .logo a {
+		font-family: 'Georgia', 'Times New Roman', Times, serif;
+		text-decoration: none;
+	}
+
+	nav ul {
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		border-radius: 10px;
+		padding: 1%;
+	}
+
+	nav ul li {
+		width: 40%;
+		margin: 0 20px;
+		border-radius: 10px;
+	}
+
+	nav ul li a {
+		text-decoration: none;
+	}
+
+	nav ul li a.disabled {
+		pointer-events: none;
+	}
+
+	/* Estilos para os Botões do cabeçalho */
+	.btn-preço {
+		width: 84%;
+		font-size: 2.0vw;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		margin: 3%;
+		padding: 3%;
+		cursor: pointer;
+		border-radius: 8px;
+	}
+
+	.btn-preço:hover {
+		transform: scale(1.05);
+		/* Leve aumento no tamanho ao passar o mouse */
+	}
+
+	/* Estilo da Imagem foto */
+	.container-foto {
+		width: 100%;
+		height: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	/* Estilo da imagem */
+	img {
+		width: 60%;
+		margin: 1% auto;
+	}
+
+	/* Container geral que organiza os elementos verticalmente */
+	.container-descrição {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Estilo da descrição */
+	.descrição-beneficente {
+		width: 100%;
+	}
+
+	/* Estilos para Containers */
+	.container-verde {
+		border-radius: 10px;
+		width: 96%;
+		margin: 1% auto;
+		padding: 5px;
+		overflow-x: auto;
+	}
+
+	.container2-cronometro {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		padding: 20px;
+		border-radius: 15px;
+	}
+
+	.container-cronometro {
+		margin-bottom: 20px;
+	}
+
+	#cronometro {
+		font-size: 3.0vw;
+		padding: 20px 40px;
+		border-radius: 10px;
+		transition: all 0.5s;
+	}
+
+	#cronometro.finalizado {
+		transform: scale(1.2);
+		animation: pulsar 1s infinite alternate;
+	}
+
+	@keyframes pulsar {
+		from {
+			transform: scale(1.2);
+		}
+
+		to {
+			transform: scale(1.3);
+		}
+	}
+
+	#mensagem-sorteio {
+		font-size: 4.0vw;
+		animation: fadeInOut 1.5s infinite;
+	}
+
+	@keyframes fadeInOut {
+
+		0%,
+		100% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+	}
+
+	/* Ajustes para containers de números */
+	.resultado-sorteio {
+		font-size: 3.0vw;
+		width: 100%;
+	}
+
+	.resultado-sorteio h2 {
+		margin-bottom: 10px;
+	}
+
+	.resultado-sorteio p {
+		margin: 1% auto;
+
+	}
+
+	/* Estilização para botões */
+	.number-btn {
+		width: 7vw;
+		height: 7vw;
+		border: none;
+		border-radius: 50%;
+		font-size: 3vw;
+		cursor: pointer;
+		margin: 1% auto;
+	}
+
+	.number-btn:disabled {
+		cursor: not-allowed;
+	}
+
+	/* Estilização para o resumo */
+	.summary {
+		margin-top: 2vw;
+		padding: 3vw;
+		border-radius: 1vw;
+	}
+
+	.summary p {
+		margin: 1.5vw 0;
+		font-size: 2.5vw;
+		/* Tamanho da fonte responsivo */
+	}
+
+	/* Estilização para a lista de participantes */
+	#lista-participantes {
+		display: flex;
+		flex-wrap: wrap;
+		list-style-type: none;
+		font-size: 1.0vw;
+		border-radius: 10px;
+	}
+
+	/* Estilos para Títulos */
+	h1 {
+		font-size: 6.0vw;
+		text-align: center;
+
+	}
+
+	h2 {
+		font-size: 5.0vw;
+		text-align: center;
+
+	}
+
+	h3 {
+		font-size: 4.0vw;
+		text-align: center;
+
+	}
+
+	h4,
+	h5 {
+		font-size: 3.0vw;
+		text-align: center;
+		margin: 0.5em 0;
+	}
+
+
+	
+	/* Estilos para Parágrafos */
+	.p1,
+	.p2,
+	.p3 {
+		text-align: justify;
+		margin: 0 1%;
+		text-indent: 10%;
+		font-size: 3.0vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.p4 {
+		text-align: right;
+		margin: 0 1%;
+		font-size: 3.0vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.btn1,
+	.btn2,
+	.btn3 {
+		width: 80%;
+		border: none;
+		padding: 1% 10%;
+		text-align: center;
+		cursor: pointer;
+		border-radius: 10px;
+		margin-left: 10%;
+		margin-right: 10%;
+		font-size: 3.0vw;
+	}
+
+	.btn1:hover,
+	.btn2:hover {
+		transform: scale(1.1);
+	}
+
+	.btn3:hover {
+		transform: scale(1.1);
+	}
+
+	/* Estilo do Rodapé */
+	footer {
+		text-align: center;
+		margin: 1%;
+		padding: 1%;
+		border-radius: 8px;
+		font-size: 3.0vw;
+	}
+}

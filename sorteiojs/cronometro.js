@@ -58,12 +58,12 @@ function realizarSorteio() {
 
     const resultadoContainer = document.getElementById("resultado-sorteio"); // Seleciona o contêiner de resultado do DOM
     resultadoContainer.innerHTML = "<h2>Serviço social:</h2>" +
-        ganhadores.map(g => `<p>Núm ⬇ ${g.num}= (${g.no})</p>`).join(""); // Exibe os ganhadores no DOM
+        ganhadores.map(g => `<p>Núm ⬇ ${g.numero}= (${g.nome})</p>`).join(""); // Exibe os ganhadores no DOM
 }
 
 // Exemplo de uso da função diadosorteio
 if (!sorteioRealizado) {
-    diadosorteio(23, 9, 2025, 8); // Configura a data e hora do sorteio
+    diadosorteio(22, 9, 2025, 20); // Configura a data e hora do sorteio
 } else {
     document.getElementById("cronometro").textContent = "Serviço social:"; // Exibe mensagem caso o sorteio já tenha sido realizado
     document.getElementById("mensagem-sorteio").textContent = "Sorteio já realizado! Assim que possível será publicado no ambiênte 'Sorteios'."; // Mensagem de sorteio finalizado
