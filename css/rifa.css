@@ -72,11 +72,11 @@ h1 {
 } 
  
 h2 { 
-    color: yellow; 
+    color: white; 
 } 
  
 h3 { 
-    color: brown; 
+    color: white; 
 } 
  
 h4 { 
@@ -97,11 +97,11 @@ h5 {
 } 
  
 .p3 { 
-    color: red; 
+    color: rgb(156, 205, 211); 
 } 
  
 .p4 { 
-    color: blue; 
+    color: silver; 
 } 
  
 .p5 { 
@@ -142,7 +142,7 @@ h5 {
     color: pink; 
 } 
  
-.code-container { 
+.container-verde { 
     background-color: #556B2F; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
 } 
