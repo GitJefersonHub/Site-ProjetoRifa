@@ -3,29 +3,24 @@
 
 	/* Estilos Gerais */
 	body {
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		width: 100%;
+		margin: 1% auto;
+		width: 98%;
 	}
 
 	/* Estilo do Cabeçalho */
 	nav {
-		padding: 1% 0;
+		padding: 1%;
 		text-align: center;
-		margin: 0 1%;
 	}
 
 	nav .logo {
-		margin-right: auto;
 		border-radius: 10px;
-		padding: 1px;
-		margin: 0 1%;
+		padding: 1%;
+
 	}
 
 	nav .logo a {
 		font-family: 'Georgia', 'Times New Roman', Times, serif;
-		font-size: 12.0vw;
 		text-decoration: none;
 	}
 
@@ -69,21 +64,39 @@
 		/* Leve aumento no tamanho ao passar o mouse */
 	}
 
-	/* Estilo da Imagem Jeferson Alves */
+	/* Estilo da Imagem foto */
 	.container-foto {
+		width: 100%;
+		height: 60%;
 		display: flex;
-		align-items: flex-start;
-	}
-	img {
-		width: 30%;
-		margin: 1%;
+		justify-content: center;
+		align-items: center;
 	}
 
+	/* Estilo da imagem */
+	img {
+		width: 50%;
+		margin: 1% auto;
+	}
+
+	/* Container geral que organiza os elementos verticalmente */
+	.container-descrição {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* Estilo da descrição */
 	.descrição-beneficente {
-		hyphens: auto;
-		width: 70%;
-		font-size: 4.1vw;
-		padding-right: 2px;
+		width: 100%;
+	}
+
+	/* Estilos para Containers */
+	.container-verde {
+		border-radius: 10px;
+		width: 96%;
+		margin: 10px auto;
+		padding: 5px;
+		overflow-x: auto;
 	}
 
 	.container2-cronometro {
@@ -155,11 +168,12 @@
 
 	/* Estilização para botões */
 	.number-btn {
-		width: 10vw;
-		height: 10vw;
+		align-items: center;
+		width: 11vw;
+		height: 11vw;
 		border: none;
 		border-radius: 50%;
-		font-size: 4vw;
+		font-size: 5vw;
 		cursor: pointer;
 		margin: 1% auto;
 	}
@@ -186,32 +200,55 @@
 		display: flex;
 		flex-wrap: wrap;
 		list-style-type: none;
-		font-size: 1.4vw;
+		font-size: 3.0vw;
 		border-radius: 10px;
 	}
+
 	/* Estilos para Títulos */
-	h1,
-	h2,
-	h3,
+	h1 {
+		font-size: 10.0vw;
+		text-align: center;
+
+	}
+
+	h2 {
+		font-size: 6.0vw;
+		text-align: center;
+
+	}
+
+	h3 {
+		font-size: 5.0vw;
+		text-align: center;
+
+	}
+
 	h4,
 	h5 {
-		font-size: 6.0vw;
+		font-size: 4.0vw;
 		text-align: center;
 		margin: 0.5em 0;
 	}
 
+
 	/* Estilos para Parágrafos */
 	.p1,
 	.p2,
-	.p3,
-	.p4 {
+	.p3 {
 		hyphens: auto;
-		text-align: justify;
+		text-align: justify left;
 		margin: 0 1%;
 		text-indent: 10%;
 		font-size: 5.0vw;
 	}
-	
+
+	.p4 {
+		hyphens: auto;
+		text-align: right;
+		margin: 0 1%;
+		font-size: 5.0vw;
+	}
+
 	.btn1,
 	.btn2,
 	.btn3 {
@@ -235,15 +272,6 @@
 		transform: scale(1.1);
 	}
 
-	/* Estilos para Containers */
-	.code-container {
-		border-radius: 10px;
-		width: 90%;
-		margin: 10px auto;
-		padding: 5px;
-		overflow-x: auto;
-	}
-
 	/* Estilo do Rodapé */
 	footer {
 		text-align: center;
@@ -255,770 +283,11 @@
 }
 
 
-/* Tablet */
+/* Telas médias */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-	/* Estilos Gerais */
-	body {
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	/* Estilo do Cabeçalho */
-	nav {
-		padding: 1% 0;
-		text-align: center;
-		margin: 0 1%;
-	}
-
-	nav .logo {
-		margin-right: auto;
-		border-radius: 10px;
-		padding: 1px;
-		margin: 0 1%;
-	}
-
-	nav .logo a {
-		font-family: 'Georgia', 'Times New Roman', Times, serif;
-		font-size: 12.0vw;
-		text-decoration: none;
-	}
-
-	nav ul {
-		list-style: none;
-		display: flex;
-		justify-content: center;
-		border-radius: 10px;
-		padding: 1%;
-	}
-
-	nav ul li {
-		width: 40%;
-		margin: 0 20px;
-		border-radius: 10px;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-	}
-
-	nav ul li a.disabled {
-		pointer-events: none;
-	}
-
-	/* Estilos para os Botões do cabeçalho */
-	.btn-preço {
-		width: 84%;
-		font-size: 6.0vw;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		margin: 3%;
-		padding: 3%;
-		cursor: pointer;
-		border-radius: 8px;
-	}
-
-	.btn-preço:hover {
-		transform: scale(1.05);
-		/* Leve aumento no tamanho ao passar o mouse */
-	}
-
-	/* Estilo da Imagem Jeferson Alves */
-	.containerJA {
-		display: flex;
-		align-items: flex-start;
-	}
-	img {
-		width: 30%;
-		margin: 1%;
-	}
-
-	.descrição-beneficente {
-		hyphens: auto;
-		width: 70%;
-		font-size: 4.1vw;
-		padding-right: 2px;
-	}
-
-	.container2-cronometro {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		padding: 20px;
-		border-radius: 15px;
-	}
-
-	.container-cronometro {
-		margin-bottom: 20px;
-	}
-
-	#cronometro {
-		font-size: 7.0vw;
-		padding: 20px 40px;
-		border-radius: 10px;
-		transition: all 0.5s;
-	}
-
-	#cronometro.finalizado {
-		transform: scale(1.2);
-		animation: pulsar 1s infinite alternate;
-	}
-
-	@keyframes pulsar {
-		from {
-			transform: scale(1.2);
-		}
-
-		to {
-			transform: scale(1.3);
-		}
-	}
-
-	#mensagem-sorteio {
-		font-size: 4.0vw;
-		animation: fadeInOut 1.5s infinite;
-	}
-
-	@keyframes fadeInOut {
-
-		0%,
-		100% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-	}
-
-	/* Ajustes para containers de números */
-	.resultado-sorteio {
-		font-size: 3.0vw;
-		width: 100%;
-	}
-
-	.resultado-sorteio h2 {
-		margin-bottom: 10px;
-	}
-
-	.resultado-sorteio p {
-		margin: 1% auto;
-
-	}
-
-	/* Estilização para botões */
-	.number-btn {
-		width: 10vw;
-		height: 10vw;
-		border: none;
-		border-radius: 50%;
-		font-size: 4vw;
-		cursor: pointer;
-	}
-
-	.number-btn:disabled {
-		cursor: not-allowed;
-	}
-
-	/* Estilização para o resumo */
-	.summary {
-		margin-top: 2vw;
-		padding: 3vw;
-		border-radius: 1vw;
-	}
-
-	.summary p {
-		margin: 1.5vw 0;
-		font-size: 2.5vw;
-		/* Tamanho da fonte responsivo */
-	}
-
-	/* Estilização para a lista de participantes */
-	#lista-participantes {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		list-style-type: none;
-		font-size: 3vw;
-		border-radius: 10px;
-	}
-	/* Estilos para Títulos */
-	h1,
-	h2,
-	h3,
-	h4,
-	h5 {
-		font-size: 5.0vw;
-		text-align: center;
-		margin: 0.5em 0;
-	}
-
-	/* Estilos para Parágrafos */
-	.p1,
-	.p2,
-	.p3,
-	.p4 {
-		hyphens: auto;
-		text-align: justify;
-		margin: 0 1%;
-		text-indent: 10%;
-		font-size: 4.0vw;
-	}
-	
-	.btn1,
-	.btn2,
-	.btn3 {
-		width: 80%;
-		border: none;
-		padding: 1% 10%;
-		text-align: center;
-		cursor: pointer;
-		border-radius: 10px;
-		margin-left: 10%;
-		margin-right: 10%;
-		font-size: 5.0vw;
-	}
-
-	.btn1:hover,
-	.btn2:hover {
-		transform: scale(1.1);
-	}
-
-	.btn3:hover {
-		transform: scale(1.1);
-	}
-
-	/* Estilos para Containers */
-	.code-container {
-		border-radius: 10px;
-		width: 90%;
-		margin: 10px auto;
-		padding: 5px;
-		overflow-x: auto;
-	}
-
-	/* Estilo do Rodapé */
-	footer {
-		text-align: center;
-		margin: 1%;
-		padding: 1%;
-		border-radius: 8px;
-		font-size: 4.1vw;
-	}
-
 }
 
-/* Laptops */
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
-	/* Estilos Gerais */
-	body {
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	/* Estilo do Cabeçalho */
-	nav {
-		padding: 1% 0;
-		text-align: center;
-		margin: 0 1%;
-	}
-
-	nav .logo {
-		margin-right: auto;
-		border-radius: 10px;
-		padding: 1px;
-		margin: 0 1%;
-	}
-
-	nav .logo a {
-		font-family: 'Georgia', 'Times New Roman', Times, serif;
-		font-size: 12.0vw;
-		text-decoration: none;
-	}
-
-	nav ul {
-		list-style: none;
-		display: flex;
-		justify-content: center;
-		border-radius: 10px;
-		padding: 1%;
-	}
-
-	nav ul li {
-		width: 40%;
-		margin: 0 20px;
-		border-radius: 10px;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-	}
-
-	nav ul li a.disabled {
-		pointer-events: none;
-	}
-
-	/* Estilos para os Botões do cabeçalho */
-	.btn-preço {
-		width: 84%;
-		font-size: 6.0vw;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		margin: 3%;
-		padding: 3%;
-		cursor: pointer;
-		border-radius: 8px;
-	}
-
-	.btn-preço:hover {
-		transform: scale(1.05);
-		/* Leve aumento no tamanho ao passar o mouse */
-	}
-
-	/* Estilo da Imagem Jeferson Alves */
-	.containerJA {
-		display: flex;
-		align-items: flex-start;
-	}
-	img {
-		width: 30%;
-		margin: 1%;
-	}
-
-	.descrição-beneficente {
-		hyphens: auto;
-		width: 70%;
-		font-size: 4.1vw;
-		padding-right: 2px;
-	}
-
-	.container2-cronometro {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		padding: 20px;
-		border-radius: 15px;
-	}
-
-	.container-cronometro {
-		margin-bottom: 20px;
-	}
-
-	#cronometro {
-		font-size: 7.0vw;
-		padding: 20px 40px;
-		border-radius: 10px;
-		transition: all 0.5s;
-	}
-
-	#cronometro.finalizado {
-		transform: scale(1.2);
-		animation: pulsar 1s infinite alternate;
-	}
-
-	@keyframes pulsar {
-		from {
-			transform: scale(1.2);
-		}
-
-		to {
-			transform: scale(1.3);
-		}
-	}
-
-	#mensagem-sorteio {
-		font-size: 4.0vw;
-		animation: fadeInOut 1.5s infinite;
-	}
-
-	@keyframes fadeInOut {
-
-		0%,
-		100% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-	}
-
-	/* Ajustes para containers de números */
-	.resultado-sorteio {
-		font-size: 3.0vw;
-		width: 100%;
-	}
-
-	.resultado-sorteio h2 {
-		margin-bottom: 10px;
-	}
-
-	.resultado-sorteio p {
-		margin: 1% auto;
-
-	}
-
-	/* Estilização para botões */
-	.number-btn {
-		width: 10vw;
-		height: 10vw;
-		border: none;
-		border-radius: 50%;
-		font-size: 4vw;
-		cursor: pointer;
-	}
-
-	.number-btn:disabled {
-		cursor: not-allowed;
-	}
-
-	/* Estilização para o resumo */
-	.summary {
-		margin-top: 2vw;
-		padding: 3vw;
-		border-radius: 1vw;
-	}
-
-	.summary p {
-		margin: 1.5vw 0;
-		font-size: 2.5vw;
-		/* Tamanho da fonte responsivo */
-	}
-
-	/* Estilização para a lista de participantes */
-	#lista-participantes {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		list-style-type: none;
-		font-size: 3vw;
-		border-radius: 10px;
-	}
-	/* Estilos para Títulos */
-	h1,
-	h2,
-	h3,
-	h4,
-	h5 {
-		font-size: 5.0vw;
-		text-align: center;
-		margin: 0.5em 0;
-	}
-
-	/* Estilos para Parágrafos */
-	.p1,
-	.p2,
-	.p3,
-	.p4 {
-		hyphens: auto;
-		text-align: justify;
-		margin: 0 1%;
-		text-indent: 10%;
-		font-size: 4.0vw;
-	}
-	
-	.btn1,
-	.btn2,
-	.btn3 {
-		width: 80%;
-		border: none;
-		padding: 1% 10%;
-		text-align: center;
-		cursor: pointer;
-		border-radius: 10px;
-		margin-left: 10%;
-		margin-right: 10%;
-		font-size: 5.0vw;
-	}
-
-	.btn1:hover,
-	.btn2:hover {
-		transform: scale(1.1);
-	}
-
-	.btn3:hover {
-		transform: scale(1.1);
-	}
-
-	/* Estilos para Containers */
-	.code-container {
-		border-radius: 10px;
-		width: 90%;
-		margin: 10px auto;
-		padding: 5px;
-		overflow-x: auto;
-	}
-
-	/* Estilo do Rodapé */
-	footer {
-		text-align: center;
-		margin: 1%;
-		padding: 1%;
-		border-radius: 8px;
-		font-size: 4.1vw;
-	}
 
-}
-
-/* Desktops TVS*/
-@media only screen and (min-width: 1201px) {
-	/* Estilos Gerais */
-	body {
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		width: 100%;
-	}
-
-	/* Estilo do Cabeçalho */
-	nav {
-		padding: 1% 0;
-		text-align: center;
-		margin: 0 1%;
-	}
-
-	nav .logo {
-		margin-right: auto;
-		border-radius: 10px;
-		padding: 1px;
-		margin: 0 1%;
-	}
-
-	nav .logo a {
-		font-family: 'Georgia', 'Times New Roman', Times, serif;
-		font-size: 12.0vw;
-		text-decoration: none;
-	}
-
-	nav ul {
-		list-style: none;
-		display: flex;
-		justify-content: center;
-		border-radius: 10px;
-		padding: 1%;
-	}
-
-	nav ul li {
-		width: 40%;
-		margin: 0 20px;
-		border-radius: 10px;
-	}
-
-	nav ul li a {
-		text-decoration: none;
-	}
-
-	nav ul li a.disabled {
-		pointer-events: none;
-	}
-
-	/* Estilos para os Botões do cabeçalho */
-	.btn-preço {
-		width: 84%;
-		font-size: 6.0vw;
-		text-align: center;
-		text-decoration: none;
-		display: inline-block;
-		margin: 3%;
-		padding: 3%;
-		cursor: pointer;
-		border-radius: 8px;
-	}
-
-	.btn-preço:hover {
-		transform: scale(1.05);
-		/* Leve aumento no tamanho ao passar o mouse */
-	}
-
-	/* Estilo da Imagem Jeferson Alves */
-	.containerJA {
-		display: flex;
-		align-items: flex-start;
-	}
-	img {
-		width: 30%;
-		margin: 1%;
-	}
-
-	.descrição-beneficente {
-		hyphens: auto;
-		width: 70%;
-		font-size: 4.1vw;
-		padding-right: 2px;
-	}
-
-	.container2-cronometro {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-		padding: 20px;
-		border-radius: 15px;
-	}
-
-	.container-cronometro {
-		margin-bottom: 20px;
-	}
-
-	#cronometro {
-		font-size: 7.0vw;
-		padding: 20px 40px;
-		border-radius: 10px;
-		transition: all 0.5s;
-	}
-
-	#cronometro.finalizado {
-		transform: scale(1.2);
-		animation: pulsar 1s infinite alternate;
-	}
-
-	@keyframes pulsar {
-		from {
-			transform: scale(1.2);
-		}
-
-		to {
-			transform: scale(1.3);
-		}
+	/* Telas grandes */
+	@media only screen and (min-width: 1201px) {
 	}
-
-	#mensagem-sorteio {
-		font-size: 4.0vw;
-		animation: fadeInOut 1.5s infinite;
-	}
-
-	@keyframes fadeInOut {
-
-		0%,
-		100% {
-			opacity: 0;
-		}
-
-		50% {
-			opacity: 1;
-		}
-	}
-
-	/* Ajustes para containers de números */
-	.resultado-sorteio {
-		font-size: 3.0vw;
-		width: 100%;
-	}
-
-	.resultado-sorteio h2 {
-		margin-bottom: 10px;
-	}
-
-	.resultado-sorteio p {
-		margin: 1% auto;
-
-	}
-
-	/* Estilização para botões */
-	.number-btn {
-		width: 10vw;
-		height: 10vw;
-		border: none;
-		border-radius: 50%;
-		font-size: 4vw;
-		cursor: pointer;
-	}
-
-	.number-btn:disabled {
-		cursor: not-allowed;
-	}
-
-	/* Estilização para o resumo */
-	.summary {
-		margin-top: 2vw;
-		padding: 3vw;
-		border-radius: 1vw;
-	}
-
-	.summary p {
-		margin: 1.5vw 0;
-		font-size: 2.5vw;
-		/* Tamanho da fonte responsivo */
-	}
-
-	/* Estilização para a lista de participantes */
-	#lista-participantes {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		list-style-type: none;
-		font-size: 3vw;
-		border-radius: 10px;
-	}
-	/* Estilos para Títulos */
-	h1,
-	h2,
-	h3,
-	h4,
-	h5 {
-		font-size: 5.0vw;
-		text-align: center;
-		margin: 0.5em 0;
-	}
-
-	/* Estilos para Parágrafos */
-	.p1,
-	.p2,
-	.p3,
-	.p4 {
-		hyphens: auto;
-		text-align: justify;
-		margin: 0 1%;
-		text-indent: 10%;
-		font-size: 4.0vw;
-	}
-	
-	.btn1,
-	.btn2,
-	.btn3 {
-		width: 80%;
-		border: none;
-		padding: 1% 10%;
-		text-align: center;
-		cursor: pointer;
-		border-radius: 10px;
-		margin-left: 10%;
-		margin-right: 10%;
-		font-size: 5.0vw;
-	}
-
-	.btn1:hover,
-	.btn2:hover {
-		transform: scale(1.1);
-	}
-
-	.btn3:hover {
-		transform: scale(1.1);
-	}
-
-	/* Estilos para Containers */
-	.code-container {
-		border-radius: 10px;
-		width: 90%;
-		margin: 10px auto;
-		padding: 5px;
-		overflow-x: auto;
-	}
-
-	/* Estilo do Rodapé */
-	footer {
-		text-align: center;
-		margin: 1%;
-		padding: 1%;
-		border-radius: 8px;
-		font-size: 4.1vw;
-	}
-
-}

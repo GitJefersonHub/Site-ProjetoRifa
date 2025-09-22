@@ -11,44 +11,57 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
-  <!-- Comentários -->
+<!-- Comentários -->
 
 <body>
     <nav>
         <div class="logo">
-            <h1><a href="index.html">Serviço social</a></h1>
+            <a href="index.html">
+                <h1>Rifa Solidária!
+                </h1>
+            </a>
         </div>
         <ul>
             <li>
-                <a href=".html" id="preço-link"
-                    onclick="alert('Escolha o (s) número (s) disponíveis!'); return false;" class="btn-preço">R$
-                    20,00</a>
+                <a href=".html" id="preço-link" onclick="alert('Escolha o (s) número (s) disponíveis!'); return false;"
+                    class="btn-preço">R$
+                    30,00</a>
             </li>
             <li>
-                <a href=".html" id="preço-link"
-                    onclick="alert('Escolha o (s) número (s) disponíveis!'); return false;" class="btn-preço">R$
-                    20,00</a>
+                <a href=".html" id="preço-link" onclick="alert('Escolha o (s) número (s) disponíveis!'); return false;"
+                    class="btn-preço">R$
+                    30,00</a>
             </li>
         </ul>
     </nav>
     <main>
         <div class="container-foto">
-            <img src="img/J1.png" alt="J1">
+            <img src="img/Metropoles.png" alt="metr">
+        </div>
+        <div class="container-descrição">
             <div id="descrição-beneficente" class="descrição-beneficente">
-                Seja bem-vindo😃<br>
+                <!--Seja bem-vindo😃<br>
                 Convido você a conhecer o Projeto *Rifa Solidária*.<br>
                 Aqui você pode contribuir com o ambiente participando da rifa, concorrendo a prêmios,
-                ou até mesmo adquirindo a prestação de serviço da rifa em um processo beneficente.
+                ou até mesmo adquirindo a prestação de serviço da rifa em um processo beneficente.-->
+                <p class="p1">Moradora do Cond Res Metropoles com crianças pequenas, no momento passando por
+                    desiquilibrio financeiro precisando de sua ajuda!</p>
+                <p class="p1">Qualquer ajuda é bem vinda.</p>
+                <p class="p1">Para doações de mantimento (deixar na portaria do condomínio).</p>
+                <p class="p2">Aqui na Rifa Solidária, você pode ajudar participando da rifa concorrendo a prêmios
+                    'descritos na rifa'.</p>
+                <p class="p3">"Levai as cargas uns dos outros, e assim cumprireis a lei de Cristo.”</p>
+                <p class="p4">📖 Gálatas 6:2</p>
             </div>
-            <br>
         </div>
-        <div class="code-container">
+
+        <div class="container-verde">
             <section>
                 <p class="p2">Adquira quantos números quiser.</p>
                 <p class="p2">Aumente a sua chance de ganhar os prêmios.</p>
-                <h1>R$: 20,00</h1>
+                <h2>R$: 30,00</h2>
                 <p class="p1">Valor arrecadado: R$ <span id="valor-arrecadado">0.00</span></p>
-                <h4>Destino:</h4>
+                <h3>Destino:</h3>
 
                 <p class="p1">Serviço social: R$ <span id="cliente">0.00</span></p>
                 <p class="p2">1° ganhador: R$ <span id="primeiro-ganhador">0.00</span></p>
@@ -59,7 +72,10 @@
                 <p class="p1">Manutenção: R$ <span id="manutenção">0.00</span></p>
                 <br>
                 <p class="p1">
-                    Os prêmios serão transferidos via chave pix ou conta bancaria dos destinatários.
+                    Os prêmios serão transferidos via chave pix / conta bancaria / com testemunhas.
+                </p>
+                <p class="p1">
+                    Os ganhadores serão publicados no ambiente 'Sorteio' assim que possível.
                 </p>
                 <br>
                 <div class="container2-cronometro">
@@ -70,17 +86,14 @@
                     <div id="resultado-sorteio" class="resultado-sorteio"></div>
                 </div>
                 <br>
-                <button class="btn2"
-                    onclick="window.open('https://drive.google.com/file/d/1-MW5Cq9LmIs7RhKZhIwuF4i0_9--1ahb/view?usp=sharing', '_blank')">Sorteios:</button>
+                <button
+                    class="btn2">Sorteios:</button><!-- onclick="window.open('https://drive.google.com/file/d/1-MW5Cq9LmIs7RhKZhIwuF4i0_9--1ahb/view?usp=sharing', '_blank')" -->
                 <br>
                 <br>
                 <div class="numbers-container"></div>
                 <br>
                 <p class="p2">Lista de Participantes Confirmados</p>
-                <h2>Processo de atualização</h2>
                 <ul id="lista-participantes"></ul>
-
-
             </section>
         </div>
     </main>
