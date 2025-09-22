@@ -1,0 +1,154 @@
+/* Estilos Gerais */ 
+body { 
+    color: white; 
+    background: linear-gradient(135deg, #0b0336, #2a5298); 
+} 
+ 
+#lista-participantes { 
+    color: white; 
+    background: linear-gradient(135deg, #1e3c72, #2a5298); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+} 
+ 
+.number-btn { 
+    background-color: #007bff; 
+    color: white; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+} 
+ 
+.number-btn:disabled { 
+    background-color: #6c757d; 
+} 
+ 
+.summary { 
+    background: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.container2-cronometro { 
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); 
+} 
+ 
+#cronometro { 
+    background-color: rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); 
+} 
+ 
+#cronometro.finalizado { 
+    background-color: #ff0000; 
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.8); 
+} 
+ 
+/* Estilo do Cabeçalho */ 
+nav { 
+    background-color: #333; 
+    color: white; 
+} 
+ 
+nav .logo { 
+    background-color: blue; 
+} 
+ 
+nav .logo a { 
+    color: white; 
+} 
+ 
+nav ul li { 
+    background-color: pink; 
+} 
+ 
+nav ul li a { 
+    color: white; 
+} 
+ 
+nav ul li a.disabled { 
+    color: grey; 
+} 
+ 
+/* Estilos para Títulos */ 
+h1 { 
+    color: white; 
+} 
+ 
+h2 { 
+    color: white; 
+} 
+ 
+h3 { 
+    color: white; 
+} 
+ 
+h4 { 
+    color: white; 
+} 
+ 
+h5 { 
+    color: #007BFF; 
+} 
+ 
+/* Estilos para Parágrafos */ 
+.p1 { 
+    color: white; 
+} 
+ 
+.p2 { 
+    color: yellow; 
+} 
+ 
+.p3 { 
+    color: rgb(156, 205, 211); 
+} 
+ 
+.p4 { 
+    color: silver; 
+} 
+ 
+.p5 { 
+    color: white; 
+} 
+ 
+ 
+/* Estilos para os Botões */  
+.btn-preço { 
+    transition: transform 0.3s, background-color 0.3s; 
+    background-color: #4caf50;  
+    color: white; 
+} 
+ 
+.btn-preço:hover { 
+    background-color: #45a049; 
+    /* Cor de fundo ao passar o mouse */ 
+} 
+
+.btn1, 
+.btn2,
+.btn3 { 
+    background: linear-gradient(135deg, green, orange); 
+    color: white; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.btn1:hover, 
+.btn2:hover,
+.btn3:hover { 
+    background-color: #45a049; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+} 
+ 
+/* Estilos para Containers */ 
+.descrição-beneficente { 
+    color: pink; 
+} 
+ 
+.container-verde { 
+    background-color: #556B2F; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+} 
+
+/* Estilo do Rodapé */
+footer {
+    background-color: blue;
+    color: white;
+}
