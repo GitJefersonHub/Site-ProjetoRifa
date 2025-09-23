@@ -5,15 +5,15 @@ let valorArrecadado = 0; // Inicializa o valor total arrecadado.
 // Lista de números confirmados com nomes 
 let numerosConfirmados = {
     1: "Jeferson A O",
-    11: "Cristyma T de O",
-    21: "Gilmacy T de O",
-    31: "Irene A de O",
-    41: "Janete C A",
-    51: "Wellington A C",
-    61: "Eudes J R",
-    71: "Anna J",
-    81: "Moisés P G",
-    91: "Xuxa M",      
+    //11: "Cristyma T de O",
+    //21: "Gilmacy T de O",
+    //31: "Irene A de O",
+    //41: "Janete C A",
+    //51: "Wellington A C",
+    //61: "Eudes J R",
+    //71: "Anna J",
+    //81: "Moisés P G",
+    //91: "Xuxa M",      
     //2: "xxx", 3: "xxx", 4: "xxx", 5: "xxx", 6: "xxx", 7: "xxx", 8: "xxx", 9: "xxx", 10: "xxx",
     //12: "xxx", 13: "xxx", 14: "xxx", 15: "xxx", 16: "xxx", 17: "xxx", 18: "xxx", 19: "xxx", 20: "xxx",
     //22: "xxx", 23: "xxx", 24: "xxx", 25: "xxx", 26: "xxx", 27: "xxx", 28: "xxx", 29: "xxx", 30: "xxx",
@@ -103,7 +103,7 @@ for (let i = 1; i <= 100; i++) { // Loop para criar botões de 1 a 0000.
     // Adiciona um evento de clique ao botão 
     button.addEventListener('click', () => {
 
-        alert('Siga o passo a passo no WhatsApp, aguarde a confirmação e boa sorte!'); // Pausa a seleção de números.
+        alert('Programa parado!'); // Pausa a seleção de números.
         //const confirmacao = confirm(` ${i}. Deseja continuar?`); // Pausa o envio da mensagem para o WhatsApp. 
 
         if (confirmacao) {

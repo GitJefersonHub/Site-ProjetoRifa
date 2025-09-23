@@ -251,6 +251,14 @@
 		word-break: break-word;
 	}
 
+	.p5 {
+		text-align: left;
+		font-size: 4.4vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
 	.btn1,
 	.btn2,
 	.btn3 {
@@ -533,6 +541,16 @@
 		text-align: right;
 		margin: 0 1%;
 		font-size: 5.0vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.p5 {
+		text-align: left;
+		margin: 0 1%;
+		text-indent: 10%;
+		font-size: 4.8vw;
 		hyphens: auto;
 		overflow-wrap: break-word;
 		word-break: break-word;
@@ -821,6 +839,16 @@
 		text-align: right;
 		margin: 0 1%;
 		font-size: 3.0vw;
+		hyphens: auto;
+		overflow-wrap: break-word;
+		word-break: break-word;
+	}
+
+	.p5 {
+		text-align: left;
+		margin: 0 1%;
+		text-indent: 10%;
+		font-size: 4.8vw;
 		hyphens: auto;
 		overflow-wrap: break-word;
 		word-break: break-word;
