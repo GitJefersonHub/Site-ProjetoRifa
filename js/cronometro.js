@@ -7,7 +7,7 @@ function formatarTempo(tempo) {
     const horas = String(Math.floor((tempo % 86400) / 3600)).padStart(2, '0'); // Calcula horas restantes
     const minutos = String(Math.floor((tempo % 3600) / 60)).padStart(2, '0'); // Calcula minutos restantes
     const segundos = String(tempo % 60).padStart(2, '0'); // Calcula segundos restantes
-    return `${dias}/${horas}:${minutos}:${segundos}`; // Retorna o tempo formatado
+    return `${dias} / ${horas}:${minutos}:${segundos}`; // Retorna o tempo formatado
 }
 
 // Define a data e hora do sorteio e inicia o cronômetro para contagem regressiva
@@ -63,7 +63,7 @@ function realizarSorteio() {
 
 // Exemplo de uso da função diadosorteio
 if (!sorteioRealizado) {
-    diadosorteio(23, 9, 2025, 8); // Configura a data e hora do sorteio
+    diadosorteio(25, 9, 2025, 8); // Configura a data e hora do sorteio
 } else {
     document.getElementById("cronometro").textContent = "Serviço social:"; // Exibe mensagem caso o sorteio já tenha sido realizado
     document.getElementById("mensagem-sorteio").textContent = "Sorteio já realizado! Assim que possível será publicado no ambiênte 'Sorteios'."; // Mensagem de sorteio finalizado
