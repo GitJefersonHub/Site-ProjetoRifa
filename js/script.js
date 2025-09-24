@@ -5,8 +5,8 @@ let valorArrecadado = 0; // Inicializa o valor total arrecadado.
 // Lista de números confirmados com nomes 
 let numerosConfirmados = {
     1: "J A O 971",
-    
     2: "xxx", 3: "xxx", 4: "xxx", 5: "xxx", 6: "xxx", 7: "xxx", 8: "xxx", 9: "xxx", 10: "xxx",
+
     //11: "xxx", 12: "xxx", 13: "xxx", 14: "xxx", 15: "xxx", 16: "xxx", 17: "xxx", 18: "xxx", 19: "xxx", 20: "xxx",
     //21: "xxx", 22: "xxx", 23: "xxx", 24: "xxx", 25: "xxx", 26: "xxx", 27: "xxx", 28: "xxx", 29: "xxx", 30: "xxx",
     //31: "xxx", 32: "xxx", 33: "xxx", 34: "xxx", 35: "xxx", 36: "xxx", 37: "xxx", 38: "xxx", 39: "xxx", 40: "xxx",
