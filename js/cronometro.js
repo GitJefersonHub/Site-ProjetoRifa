@@ -22,7 +22,7 @@ function diadosorteio(dia, mes, ano, hora) {
             document.getElementById("cronometro").textContent = formatarTempo(segundosTotais); // Atualiza o cronômetro no DOM
         } else {
             clearInterval(intervalId); // Para o cronômetro quando o tempo expira
-            document.getElementById("cronometro").textContent = "Parabéns..."; // Exibe 00:00:00:00 quando o tempo termina
+            document.getElementById("cronometro").textContent = "00 / 00:00:00"; // Exibe 00 / 00:00:00 quando o tempo termina
             if (!sorteioRealizado) { // Verifica se o sorteio ainda não foi realizado
                 sorteioRealizado = true; // Define o estado do sorteio como realizado
                 localStorage.setItem("sorteioRealizado", "true"); // Armazena o estado no localStorage
@@ -32,38 +32,10 @@ function diadosorteio(dia, mes, ano, hora) {
     }, 1000); // Executa a função a cada segundo
 }
 
-// Exibe a mensagem de "Sorteando..." e inicia o sorteio após 15 segundos
-function exibirMensagemSorteio() {
-    const mensagemSorteio = document.getElementById("mensagem-sorteio"); // Seleciona o elemento de mensagem do DOM
-    mensagemSorteio.textContent = "Sorteando..."; // Define o texto da mensagem
-    mensagemSorteio.classList.add("animacao-sorteio"); // Adiciona a animação de sorteio
-
-    // Remove a mensagem e realiza o sorteio após 15 segundos
-    setTimeout(() => {
-        mensagemSorteio.textContent = ""; // Remove a mensagem do sorteio
-        realizarSorteio(); // Realiza o sorteio
-    }, 15000); // Aguarda 15 segundos
-}
-
-// Seleciona aleatoriamente os ganhadores entre os participantes confirmados
-function realizarSorteio() {
-    const ganhadores = []; // Array para armazenar os ganhadores
-    const chavesParticipantes = Object.keys(numerosConfirmados || {}); // Obtém os participantes confirmados
-
-    while (ganhadores.length < 5 && chavesParticipantes.length > 0) {
-        const indexAleatorio = Math.floor(Math.random() * chavesParticipantes.length); // Seleciona índice aleatório
-        const ganhador = chavesParticipantes.splice(indexAleatorio, 1)[0]; // Remove e retorna o ganhador selecionado
-        ganhadores.push({ numero: ganhador, nome: numerosConfirmados[ganhador] }); // Adiciona o ganhador ao array
-    }
-
-    const resultadoContainer = document.getElementById("resultado-sorteio"); // Seleciona o contêiner de resultado do DOM
-    resultadoContainer.innerHTML = "<h2>Serviço social:</h2>" +
-        ganhadores.map(g => `<p>Núm ⬇ ${g.num}= (${g.no})</p>`).join(""); // Exibe os ganhadores no DOM
-}
 
 // Exemplo de uso da função diadosorteio
 if (!sorteioRealizado) {
-    diadosorteio(25, 9, 2025, 8); // Configura a data e hora do sorteio
+    diadosorteio(28, 9, 2025, 4,); // Configura a data e hora do sorteio
 } else {
     document.getElementById("cronometro").textContent = "Serviço social:"; // Exibe mensagem caso o sorteio já tenha sido realizado
     document.getElementById("mensagem-sorteio").textContent = "Sorteio já realizado! Assim que possível será publicado no ambiênte 'Sorteios'."; // Mensagem de sorteio finalizado
