@@ -75,8 +75,7 @@ function realizarSorteio() {
 
 // Exemplo de uso da função diadosorteio com minutos
 if (!sorteioRealizado) {
-    diadosorteio(1); // Realiza o sorteio em 5 minutos a partir de agora
+    diadosorteio(1); // Realiza o sorteio em x minutos a partir de agora
 } else {
-    document.getElementById("cronometro").textContent = "Serviço social:";
-    document.getElementById("mensagem-sorteio").textContent = "Sorteio já realizado! Assim que possível será publicado no ambiênte 'Sorteios'.";
+    
 }

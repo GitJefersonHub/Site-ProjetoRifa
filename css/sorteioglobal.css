@@ -236,7 +236,7 @@
 		text-align: justify;
 		margin: 0 1%;
 		text-indent: 10%;
-		font-size: 4.8vw;
+		font-size: 4.2vw;
 		hyphens: auto;
 		overflow-wrap: break-word;
 		word-break: break-word;
@@ -293,7 +293,7 @@
 }
 
 /* Telas médias */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
 
 	/* Estilos Gerais */
 	body {
@@ -523,7 +523,7 @@
 	}
 
 
-	
+
 	/* Estilos para Parágrafos */
 	.p1,
 	.p2,
@@ -821,7 +821,7 @@
 	}
 
 
-	
+
 	/* Estilos para Parágrafos */
 	.p1,
 	.p2,

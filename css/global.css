@@ -200,6 +200,7 @@
 		list-style-type: none;
 		font-size: 3.0vw;
 		border-radius: 10px;
+		padding: 1%;
 	}
 
 	/* Estilos para Títulos */
@@ -285,7 +286,7 @@
 }
 
 /* Telas médias */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
 
 	/* Estilos Gerais */
 	body {
@@ -486,6 +487,7 @@
 		list-style-type: none;
 		font-size: 3.0vw;
 		border-radius: 10px;
+		padding: 1%;
 	}
 
 	/* Estilos para Títulos */
@@ -515,7 +517,7 @@
 	}
 
 
-	
+
 	/* Estilos para Parágrafos */
 	.p1,
 	.p2,
@@ -772,8 +774,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		list-style-type: none;
-		font-size: 1.0vw;
+		font-size: 2.0vw;
 		border-radius: 10px;
+		padding: 1%;
 	}
 
 	/* Estilos para Títulos */
@@ -803,7 +806,7 @@
 	}
 
 
-	
+
 	/* Estilos para Parágrafos */
 	.p1,
 	.p2,
