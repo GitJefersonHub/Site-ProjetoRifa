@@ -4,26 +4,18 @@ let valorArrecadado = 0; // Inicializa o valor total arrecadado.
 
 // Lista de números confirmados com nomes 
 let numerosConfirmados = {
-    1: "Jeferson A O",
-    11: "Cristyma T de O",
-    21: "Gilmacy T de O",
-    31: "Irene A de O",
-    41: "Janete C A",
-    51: "Wellington A C",
-    61: "Eudes J R",
-    71: "Anna J",
-    81: "Moisés P G",
-    91: "Xuxa M",      
+    1: "J A O 971",
+    
     2: "xxx", 3: "xxx", 4: "xxx", 5: "xxx", 6: "xxx", 7: "xxx", 8: "xxx", 9: "xxx", 10: "xxx",
-    //12: "xxx", 13: "xxx", 14: "xxx", 15: "xxx", 16: "xxx", 17: "xxx", 18: "xxx", 19: "xxx", 20: "xxx",
-    //22: "xxx", 23: "xxx", 24: "xxx", 25: "xxx", 26: "xxx", 27: "xxx", 28: "xxx", 29: "xxx", 30: "xxx",
-    //32: "xxx", 33: "xxx", 34: "xxx", 35: "xxx", 36: "xxx", 37: "xxx", 38: "xxx", 39: "xxx", 40: "xxx",
-    //42: "xxx", 43: "xxx", 44: "xxx", 45: "xxx", 46: "xxx", 47: "xxx", 48: "xxx", 49: "xxx", 50: "xxx",
-    //52: "xxx", 53: "xxx", 54: "xxx", 55: "xxx", 56: "xxx", 57: "xxx", 58: "xxx", 59: "xxx", 60: "xxx",
-    //62: "xxx", 63: "xxx", 64: "xxx", 65: "xxx", 66: "xxx", 67: "xxx", 68: "xxx", 69: "xxx", 70: "xxx",
-    //72: "xxx", 73: "xxx", 74: "xxx", 75: "xxx", 76: "xxx", 77: "xxx", 78: "xxx", 79: "xxx", 80: "xxx",
-    //82: "xxx", 83: "xxx", 84: "xxx", 85: "xxx", 86: "xxx", 87: "xxx", 88: "xxx", 89: "xxx", 90: "xxx",
-    //92: "xxx", 93: "xxx", 94: "xxx", 95: "xxx", 96: "xxx", 97: "xxx", 98: "xxx", 99: "xxx", 100: "xxx"
+    //11: "xxx", 12: "xxx", 13: "xxx", 14: "xxx", 15: "xxx", 16: "xxx", 17: "xxx", 18: "xxx", 19: "xxx", 20: "xxx",
+    //21: "xxx", 22: "xxx", 23: "xxx", 24: "xxx", 25: "xxx", 26: "xxx", 27: "xxx", 28: "xxx", 29: "xxx", 30: "xxx",
+    //31: "xxx", 32: "xxx", 33: "xxx", 34: "xxx", 35: "xxx", 36: "xxx", 37: "xxx", 38: "xxx", 39: "xxx", 40: "xxx",
+    //41: "xxx", 42: "xxx", 43: "xxx", 44: "xxx", 45: "xxx", 46: "xxx", 47: "xxx", 48: "xxx", 49: "xxx", 50: "xxx",
+    //51: "xxx", 52: "xxx", 53: "xxx", 54: "xxx", 55: "xxx", 56: "xxx", 57: "xxx", 58: "xxx", 59: "xxx", 60: "xxx",
+    //61: "xxx", 62: "xxx", 63: "xxx", 64: "xxx", 65: "xxx", 66: "xxx", 67: "xxx", 68: "xxx", 69: "xxx", 70: "xxx",
+    //71: "xxx", 72: "xxx", 73: "xxx", 74: "xxx", 75: "xxx", 76: "xxx", 77: "xxx", 78: "xxx", 79: "xxx", 80: "xxx",
+    //81: "xxx", 82: "xxx", 83: "xxx", 84: "xxx", 85: "xxx", 86: "xxx", 87: "xxx", 88: "xxx", 89: "xxx", 90: "xxx",
+    //91: "xxx", 92: "xxx", 93: "xxx", 94: "xxx", 95: "xxx", 96: "xxx", 97: "xxx", 98: "xxx", 99: "xxx", 100: "xxx"
 }; // Objeto para armazenar números e seus respectivos nomes. 
 
 // Atualiza os valores exibidos na página e calcula os ganhos 
@@ -76,8 +68,8 @@ function atualizarListaParticipantes() {
     // Adiciona cada número e nome confirmado à lista 
     Object.entries(numerosConfirmados).forEach(([numero, nome]) => {
         const listItem = document.createElement('div');
-        listItem.style.margin = '1%'; // Espaçamento entre os itens. 
-        listItem.textContent =` ${numero}(${nome})`; // Exibe número e nome confirmados. 
+        listItem.style.margin = '1px'; // Espaçamento entre os itens. 
+        listItem.textContent = ` ${numero}(${nome})`; // Exibe número e nome confirmados. 
         listaFlexContainer.appendChild(listItem); // Adiciona o item ao contêiner. 
     });
 }
@@ -95,7 +87,7 @@ function modificarNumeroConfirmado(numero, nome = null) {
 atualizarValores(); // Exibe os valores iniciais na interface. 
 // Cria botões para os números disponíveis na rifa e configura eventos 
 const numbersContainer = document.querySelector('.numbers-container');
-for (let i = 1; i <= 100; i++) { // Loop para criar botões de 1 a 0000. 
+for (let i = 1; i <= 50; i++) { // Loop para criar botões de 1 a 0000. 
     const button = document.createElement('button');
     button.textContent = i; // Define o texto do botão com o número. 
     button.className = 'number-btn'; // Adiciona classe ao botão. 
